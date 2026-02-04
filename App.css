@@ -1,0 +1,109 @@
+.chatbox {
+  width: 50vw;
+  height: 70vh;
+  background: radial-gradient(at 0% 0%, rgb(20, 36, 37), rgb(5, 17, 1));
+  border-radius: 20px;
+  color: white;
+  caret-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(1, 105, 143, 0.5);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the form horizontally */
+  justify-content: center; /* Ensures vertical centering inside the container */
+  padding: 20px;
+  width: 100%; /* Keeps it responsive */
+}
+.login-form,
+.register-form,
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Adds consistent space between buttons/inputs */
+  width: 100%; /* Makes them fill the content width */
+  max-width: 300px; /* Prevents the form from getting too wide on 50vw */
+}
+input {
+  caret-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Target the buttons inside your container */
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(1, 105, 143, 0.8); /* Matches your shadow color */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background: rgb(1, 105, 143);
+  transform: translateY(-2px); /* Lifts up slightly on hover */
+  box-shadow: 0 5px 15px rgba(1, 105, 143, 0.4);
+}
+
+/* Style the Inputs to look "Glassy" */
+input {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05); /* Very subtle transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  caret-color: #01698f; /* Cursor matches your theme */
+  outline: none;
+}
+
+input:focus {
+  border-color: #01698f;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Labels for that clean look */
+label {
+  font-size: 0.8rem;
+  margin-bottom: -5px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chatroom-content {
+  display: flex; /* This is the magic: puts items in a row */
+  align-items: center; /* Centers button vertically with textarea */
+  gap: 10px; /* Space between textarea and button */
+  width: 100%; /* Fills the chatbox width */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.chatroom-content textarea {
+  flex: 1; /* REMOVED width: 300px; this makes it stretch! */
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: white;
+  caret-color: #01698f;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  transition: border 0.3s ease;
+}
+
+.chatroom-content .sendbtn {
+  flex-shrink: 0; /* Ensures button doesn't squish */
+  height: fit-content; /* Adapts to button padding */
+  padding: 10px 15px;
+}
