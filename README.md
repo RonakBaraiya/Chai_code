@@ -13,3 +13,6 @@ Tech used:
 
    Database :
     - Postgresql (pg Admin 4)
+    
+Presentation video:
+https://www.linkedin.com/posts/baraiyaronak_i-have-built-an-full-stack-web-app-chaicode-ugcPost-7424866510546046977-gXwY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEkbz80BLzsGTsPKdjR35bqqUQzWv1ZlsO4
